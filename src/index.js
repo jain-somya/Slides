@@ -5,9 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const  slides = [ {title:'t1',text:'t1'},{title:'t2',text:'t2'},{title:'t3',text:'t3'}]
 root.render(
   <React.StrictMode>
-    <App />
+    <App slides={slides}/>
   </React.StrictMode>
 );
 
