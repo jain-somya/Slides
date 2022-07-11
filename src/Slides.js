@@ -1,4 +1,5 @@
 import React from "react";
+import Slide from './Slide';
 
 function Slides({ slides }) {
   return (
@@ -14,10 +15,8 @@ function Slides({ slides }) {
           Next
         </button>{" "}
       </div>
-      <div id="slide" className="card text-center">
-        <h1 data-testid="title">Slide Title Here</h1>
-        <p data-testid="text">Slide Text Here</p>
-      </div>
+      {slides.map((slide)=> {<Slide slide={slide}/>})}
+      
     </div>
   );
 }
