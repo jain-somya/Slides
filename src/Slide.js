@@ -2,9 +2,10 @@ import React from 'react'
 
 function Slide({slide}) {
   return (
+      
     <div id="slide" className="card text-center">
-    <h1 data-testid={slide.title}>{slide.title}</h1>
-    <p data-testid={slide.title}>{slide.text}</p>
+    <h1 data-testid='title'>{slide.title}</h1>
+    <p data-testid='text'>{slide.text}</p>
   </div>
   )
 }

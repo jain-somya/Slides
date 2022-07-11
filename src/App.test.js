@@ -21,6 +21,7 @@ afterEach(() => {
 });
 test("App renders correctly", () => {
   const slides = makeSlides(2);
+  console.log('here-> ', slides)
   const { getByTestId } = renderApp(slides);
   const restartButton = getByTestId(testIds.restartButton);
   expect(restartButton).toHaveTextContent("Restart");
